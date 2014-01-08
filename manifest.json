@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "DKB-Steuermappe",
-  "version": "0.1",
+  "version": "1.0",
   
   "description": "Modifiziert den DKB Tresor zur Steuermappe",
   "icons": { "128": "logo.png" },
