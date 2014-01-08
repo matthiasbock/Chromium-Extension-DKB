@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "DKB-Steuermappe",
+  "version": "0.1",
+  
+  "description": "Modifiziert den DKB Tresor zur Steuermappe",
+  "icons": { "128": "logo.png" },
+
+  "content_scripts": [
+    {
+      "matches": ["https://banking.dkb.de/*"],
+      "js": ["jquery.js", "main.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://banking.dkb.de/dkb/-?$part=DkbTransactionBanking.content.eSafe.Overview.Folder*"],
+      "js": ["jquery.js", "tresor.js"],
+      "run_at": "document_end"
+    }
+    ]
+}
