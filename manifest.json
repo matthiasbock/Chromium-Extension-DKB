@@ -10,12 +10,12 @@
     {
       "matches": ["https://banking.dkb.de/*"],
       "js": ["jquery.js", "main.js"],
-      "run_at": "document_end"
+      "run_at": "document_idle"
     },
     {
       "matches": ["https://banking.dkb.de/dkb/-?$part=DkbTransactionBanking.content.eSafe.Overview.Folder*"],
-      "js": ["jquery.js", "tresor.js"],
-      "run_at": "document_end"
+      "js": ["jquery.js", "common.js", "tresor.js"],
+      "run_at": "document_idle"
     }
     ]
 }
